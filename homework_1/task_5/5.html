@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title> Table </title>
+        <style>
+            body
+            {
+                margin: 0px 0px 0px 0px;
+            }
+
+            .mainLayer 
+            {
+                font-family: 'Times New Roman', Times, serif;
+                font-style: normal;
+                font-size: 1.5em;
+
+                padding: 30px 40px 30px 40px;
+                position: relative;
+                width: 50%;
+                height: 50%;
+
+                border: 2px;
+                border-style: dotted;
+                border-color: black;
+            }
+
+            p.name,
+            p.adress,
+            p.city,
+            p.state,
+            p.zip,
+            p.magazine,
+            p.subscribtion
+            {
+                position: relative;
+                margin: 0px 0px 5px 0px;
+                display: inline-block;
+                width: 120px;
+            }
+
+            p.comments
+            {
+                position: relative;
+                margin: 5px 0px 15px 0px;
+                display: inline-block;
+                width: 300px;
+            }
+
+            input.name,
+            input.adress,
+            input.city
+            {   
+                margin: 0px 0px 5px 50px;
+                height: 25px;
+                width: 40%;
+            }
+
+            input.state,
+            input.zip
+            {
+                margin: 0px 0px 5px 50px;
+                height: 25px;
+                width: 20%;
+            }
+
+            select.magazine 
+            {
+                margin: 0px 0px 5px 50px;
+                height: 30px;
+                width: 21.1%;
+            }
+
+            .selection_buttons
+            {
+                margin: 0px 0px 5px 45px;
+                display: inline-block;
+                height: 10px;
+                width: 30%;
+            }
+
+            textarea.comments
+            {
+                width: 50%;
+                height: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "mainLayer">
+            <p class = "name"> Name: </p>
+            <input class = "name" type = "text"> <br/>
+
+            <p class = "adress"> Adress: </p> 
+            <input class = "adress" type = "text"> <br/>
+
+            <p class = "city"> City: </p>
+            <input class = "city" type = "text"> <br/>
+
+            <p class = "state"> State: </p> 
+            <input class = "state" type = "text"> <br/>
+
+            <p class = "zip"> Zip: </p> 
+            <input class = "zip" type = "text"> <br/>
+
+            <p class = "magazine"> Magazine: </p>
+            <select class = "magazine">
+                <option> Newsweek </option> 
+                <option> Hey      </option> 
+                <option> Hello    </option>
+                <option> There    </option>
+                <option> Choose   </option>
+                <option> Me       </option>
+            </select> <br/>
+            
+            <p class = "subscribtion"> Subscribtion: </p>
+            <div class = "selection_buttons">
+                <input type = "radio" name = "1_year" value = "1">
+                <label for = "1 Year"> 1 year </label>
+
+                <input type = "radio" name = "1_year" value = "1">
+	            <label for = "2 Year"> 2 year </label>
+            </div> <br/>
+
+            <p class = "comments"> Additional Comments: </p> <br/>
+
+            <textarea class = "comments"> </textarea> <br/>
+            <button> Send Your Order </button> 
+        </div>
+    </body>
+</html>

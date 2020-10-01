@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title> HTML Website </title>
+
+        <style>
+            body
+            {
+                font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+                background-color: #f0f1ec;
+                margin: 0px 0px 0px 0px;
+
+                font-style: normal;
+                font-size: 1.3em;
+                color: #f0f1ec;
+            }
+
+            .rightSide
+            {
+                padding: 15px 40px;
+                margin-left: 20%;
+                position: fixed;
+                height: 100%;
+                width: 80%;
+            }
+
+            #titleText_Professional
+            {
+                margin: 0px 0px 100px 0px;
+                user-select: none;
+                color: #216A6B;
+                font-size: 3em;
+                width: 30%;
+            }
+
+            #titleText_WebDesign
+            {
+                margin: 40px 0px 0px 0px;
+                position: absolute;
+                width: 50%;
+                
+                text-decoration: underline;
+                color: darkgrey;
+                user-select: none;
+                font-size: 5em;
+            }
+
+            #titleText_HTML_Tutorials
+            {
+                margin: 160px 0px 0px 500px;
+                position: absolute;
+                width: 50%;
+
+                text-decoration: underline;
+                user-select: none;
+                font-size: 1.5em;
+                color: #216A6B;
+            }
+
+            #rightText
+            {
+                color: #292929;
+            }
+
+            .leftSide
+            {
+                padding: 1% 0.2% 2.3% 0.2%;
+                margin: 0px 0px 0px 0px;
+                box-sizing: border-box;
+                display: inline-block;
+                width: 20%;
+
+                background-color: #216A6B;
+                position: fixed;
+
+                border: 7px;
+                border-style:ridge;
+                border-color: #314F5D;
+            }
+
+            #imageFormat
+            {
+                margin: 1em 3.3em 0em 3.3em;
+                transition: 150ms;
+            }
+
+            #imageFormat:hover
+            {
+                transform: scale(1.02);
+                transition: 150ms;
+                opacity: 95%;
+            }
+
+            #search
+            {
+                margin: 0.2em 4.4em 0em 3.5em;
+                padding: 4px 0px;
+                width: 65%;
+
+                border: 3px;
+                border-style: ridge;
+                border-color: lightgray;
+            }
+            
+            #linkToAmazon
+            {
+                padding: 0em 4em;
+
+                color:#f0f1ec;
+                transition: 600ms;
+            }
+
+            #linkToAmazon:hover
+            {
+                color: #f3982a;
+                transition: 600ms;
+            }
+
+            #searchText
+            {
+                margin: 2em 0em 0em 3.5em;
+                user-select: none   ;
+                font-weight: 500;
+            }
+
+            #searchButton
+            {
+                background-color: #292929;
+                margin: 0.3em 6.2em 5em 6.2em;
+                transition: 500ms;
+                width: 40%;
+
+                color: var(--main-color);
+                border-radius: 3px;
+                outline: none;
+            }
+
+            #searchButton:active
+            {
+                background-color: #f3982a;
+                transition: 500ms;
+                color: #1D1D1D;
+            }
+
+            #highlight
+            {
+                color: cornflowerblue;
+
+                margin: 0em 2.5em 0.4em 2.5em;
+                display: inline-block;
+                white-space: nowrap;
+                font-size: 1.5em;
+            }
+
+            #homepage
+            {
+                position: relative;
+                display: inline-block;
+                margin: 0.5em 0em 0em 2em;
+                
+                color:#f0f1ec;  
+            }
+
+            #homepageHighlight
+            {
+                color: #F9C901;
+                margin: 1em 2em 0.1em 1.7em;
+                display: inline-block;
+            }
+
+            #linkList_1
+            {
+                color: #f0f1ec;
+                margin: 0.6em 2em 0em 2.4em;
+                font-size: 0.8em;
+                display: inline-block;
+            }
+
+            #linkList_2
+            {
+                display: inline-block;
+                color: #f0f1ec;
+                font-size: 0.8em;
+                margin: 2.5em 2em 0em 2.4em;
+            }
+
+            #listStyle
+            {
+                margin: 0px 0px 0px 0px;
+                list-style: circle;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class = "leftSide"> 
+            <a href = "https://www.amazon.com/b?node=283155" target = "_blank">
+            <img id = "imageFormat" src = "Amazon.png" width = "150" height = "70"> </a>
+            <a id = "linkToAmazon" href = "https://www.amazon.com/b?node=283155"> HTML Books </a>
+
+            <div id = "searchText"> Search this site: </div>
+            <input id = "search" type = "text" href = "#home">
+            <input id = "searchButton" type = "button" value = "Search"> 
+
+            <a id = "highlight" href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Site Map </a> 
+            <a id = "homepage" href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Home Page </a>
+            <a id = "homepageHighlight" href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Main Tutorials: </a>
+            <a id = "linkList_1" href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Beginner info </a>
+            <a id = "linkList_1" href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Basic HTML Tutorial </a>
+            <a id = "linkList_1" href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Table Tutor </a>
+            <a id = "linkList_1" href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Form Tutor </a>
+            <a id = "linkList_1" href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Frames Tutor </a>
+
+            <a id = "linkList_2" href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"> WebTutour v4.0 </a>
+            <a id = "linkList_1" href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Direct Download </a>
+        </div>
+
+        <div class = "rightSide"> 
+            <div id = "rightText">
+                <h1 id = "titleText_WebDesign"> <em> Web Design </em> </h1>
+                <h1 id = "titleText_HTML_Tutorials"> <em> & HTML Tutorials </em> </h1> 
+                <h1 id = "titleText_Professional"> <em> Professional </em> </h1>
+                <br/>
+                Way back when, we thought that being on 'Web' was a novelty. <br/>
+                <br/>
+                Not any more! The Internet is transforming how we communicate <br/> 
+                and how we do business. You think television was big? Ain't nothing compared to this. <br/>
+                <br/>
+                Why should you get online? What opportuinities are here now? <br/> <br/>
+                Well for starters...
+                <ul id = "listStyle"> 
+                    <li> Increased exposure and name recognition. </li>
+                    <li> Hyper-develop niche markets... and maybe even develop a few new ones </li>
+                    <li> Online catalogs and order forms. Sell your products and services directly over the net. </li>
+                    <li> Expand your market worldwide... people in Germany need widgets too!</li>
+                    <li> Lead generation. </li>
+                    <li> Customer service & support </li>
+                </ul>
+                <br/>
+                What does it all cost? Not a whole heck a lot. <br/>
+                <br/>
+                If you have been thinking about hiring a Web Page Designer, <br/>
+                then give us a little information and got the hall rolling.
+            </div>
+        </div>
+    </body>
+</html>
