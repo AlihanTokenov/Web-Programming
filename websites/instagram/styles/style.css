@@ -59,20 +59,9 @@
         padding: 0 2em;
     }
     
-    .phone_images 
+    #phone_images 
     {
-        margin: 0 auto;
         display: none;
-        width: 0%;
-        height: 0%;
-    }
-
-    .phone_images .phone_img
-    {
-        margin: 0 auto;
-        display: none;
-        width: 0%;
-        height: 0%;
     }
 
     .footer_navigation_bar ul li
@@ -112,7 +101,7 @@
     {
         justify-content: center;
     }
-
+ 
     .copyright 
     {
         text-align: center;
@@ -125,13 +114,6 @@ html
 {
     box-sizing: border-box;
     font-size: 10px;
-}
-
-img
-{
-    max-width: 100%;
-    height: 100%;
-    width: 100%;
 }
 
 a
@@ -168,19 +150,37 @@ body
     padding: 0 0rem;
 }
 
-.phone_images
+#phone_images
 {
+    background-image: url("../images/phone.png");
+    background-size: cover;
     align-self: center;
     margin-right: 0em;
-    max-width: 45em;
     display: flex;
     
-    height: 100%;
-    width: 100%;
+    max-width: 30vw;
+    height: 80vh;
+    width: 30vw; 
     left: 0px;
     top: 0px;
 
     flex: 1;
+}
+
+#logotype
+{
+    background-image: url("../images/instagram_logo.png");
+    background-size: cover;
+
+    margin: 0em 6em 0em 6em;
+    width: 20em;
+    height: 10em;
+}
+
+#lg
+{
+    width: 100%;
+    height: 100%;
 }
 
 .login_form
@@ -194,12 +194,7 @@ body
     text-align: center;
 }
 
-.logotype
-{
-    margin: 0em 6em 0em 6em;
-    width: 20em;
-    height: 12em;
-}
+
 
 .border
 {
@@ -388,4 +383,6 @@ footer .container
     font-weight: 600;
     font-size: 1.2em;
 }
+
+
 
