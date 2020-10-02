@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title> BlackVK - Login Page </title>
+    </head>
+    <style>
+        body
+        {
+            font-family: -apple-system, 
+                        BlinkMacSystemFont, 
+                        'Segoe UI', 
+                        Roboto, 
+                        Oxygen, 
+                        Ubuntu, 
+                        Cantarell, 
+                        'Open Sans', 
+                        'Helvetica Neue', 
+                        sans-serif;
+            background-color: #222226;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            caret-color: white;
+            cursor: inherit;
+        }
+
+        header
+        {
+            background-color: #333336;
+            position: fixed;
+            height: 42px;
+            width: 100%;
+            left: 0px;
+            top: 0px;
+        }
+
+        #headerBlock
+        {
+            width: 1000px;
+            height: 42px;
+            margin: auto;
+        }
+
+        #logoAppearance
+        {   
+            position: fixed;
+            background: url("originalVKlogo.png") no-repeat;
+            background-position: 0px 7px;
+            background-size: 27px;
+        
+            float: left;
+            height: 40px;
+            width: 24px;    
+        }
+
+        .mainBlock
+        {
+            position: fixed;
+            margin: 35px 0px 0px 0px;
+            height: 1000px;
+            width: 100%;
+        }
+
+        #search
+        {
+            background: url("search.png") no-repeat;
+            background-position: 8px 7px;
+            background-color: #444444;
+            font-size: 12px;    
+        
+            box-sizing: border-box;
+            padding: 1px 10px 0px 27px;
+            margin: 7px 0px 0px 150px;
+            height: 28px;
+            width: 230px;
+        
+            font-style: normal;
+            color: white;                
+        
+            border-radius: 20px;
+            border: none;
+        }
+
+        #search:focus
+        {
+            border: none;
+            outline: none;
+        }
+
+        #switchToRussian
+        {
+            background-color: #333336;
+            margin: 0px 30px 0px 0px; 
+            padding: 11px 60px 0px 22px;
+            width: 150px;
+            height: 42px;
+            float: right;
+        
+            color: whitesmoke;
+            white-space: nowrap;
+            font-weight: bold;
+            font-size: 13px;
+        
+            box-sizing: border-box;
+            user-select: none;
+            transition: 1s;
+        }
+
+        #switchToRussian:hover
+        {
+            background-color: #303030; 
+            transition: 1s;
+        }
+
+        #loginForm 
+        {
+            float: right;
+        	margin: 30px 300px 0px 0px;
+        	height: 490px;
+        	width: 320px;
+        }
+
+        #authorizationForm 
+        {
+        	background-color:#333336;
+        	border-radius: 4px;
+        	height: 193px;
+        	width: 100%;
+        	float: right;
+        }
+
+        #lastnameUser,
+        #password, 
+        #nameUser, 
+        #login
+        {
+            position: relative;
+            background-color: #444446;  
+            margin: 30px 0px 0px 30px;
+        	padding: 6px 12px;
+        	height: 35px;
+        	width: 79%;
+        
+        	border: 1px solid #333336;
+        	box-sizing: border-box;
+        	border-radius: 3px;
+            outline: none;
+        
+        	font-size: 14px;
+        	color: whitesmoke;    
+        }
+
+        #password
+        {
+            margin: 13px 0px 0px 30px;
+        }
+
+        #finishLogin 
+        {
+        	background-color: #666666;
+        	border-radius: 3px;
+            transition: 500ms;
+        	border: none;
+        
+        	margin: 20px 0px 0px 30px;
+        	width: 95px;
+        	height: 34px;
+            outline: none;
+        	float: left;
+        
+        	box-sizing: border-box;
+        	font-size: 14px;
+        	color: #fff;
+        	cursor: pointer;
+        }
+
+        #finishLogin:hover 
+        {
+        	background-color: #555555;
+            transition: 500ms;
+        }
+
+        #finishLogin:active 
+        {
+        	background-color: #666666;
+        }
+
+        #restorePassword
+        {
+        	margin: 13px 15px 0px 10px;
+            font-weight: 500; 
+        	font-size: 13px;
+        	float: left;
+        
+            text-decoration: none;
+            color: whitesmoke;
+        }
+
+        #restorePassword:hover
+        {
+            text-decoration: underline;
+        }
+
+        #registration
+        {
+            background-color: #333336;
+        	margin: 30px 0px 0px 0px;
+        	height: 410px;
+        	width: 320px;
+            float: right;
+        
+            box-sizing: border-box;
+        	border-radius: 4px;
+        }
+
+        #firstText
+        {
+            padding: 5px 0px 0px 0px;
+            height: 12px;
+        
+            color: whitesmoke;
+            text-align: center;
+            font-size:larger;
+            font-weight: 600;
+        }
+
+        #secondText
+        {
+            text-align: center;
+            font-size: small;
+            color:#999999;
+            height: 12px;
+        }
+
+        #firstName,
+        #lastName
+        {
+            position: relative;
+            background-color: #444446;
+        	padding: 6px 12px;
+        	height: 35px;
+        	width: 79%;
+
+        	box-sizing: border-box;
+        	border-radius: 3px;
+            outline: none;
+            border: none;
+        
+        	font-size: 14px;
+        	color: whitesmoke;
+        }
+
+        #firstName
+        {
+            margin: 10px 30px 13px 30px;
+        }
+
+        #lastName
+        {
+            margin: 0px 30px 0px 30px;
+        }
+
+        #thirdText
+        {
+            padding: 0px 30px;
+            text-align: left;
+            font-size: smaller;
+            font-weight: 500;
+            color:#999999;
+        }
+
+        #day,
+        #month,
+        #year
+        {
+            background-color: #444446;
+            position: relative;
+        
+            padding: 0px 0px 0px 10px;
+        	box-sizing: border-box;
+        	border-radius: 3px;
+            height: 35px;
+            outline: none;
+            border: none;
+        
+        	font-size: 14px;
+            text-align: left;
+        	color: whitesmoke;
+        }
+
+        #day
+        {
+            margin: 0px 0px 0px 30px;
+            width: 65px;
+        }
+        #month,
+        #year
+        {
+            margin: 0px 0px 0px 5px;
+            width: 85px;
+        }
+
+        #checkboxes
+        {
+            background-color: #444446;
+            position: relative;
+            cursor: pointer;
+        }
+
+        #fourthText
+        {
+            padding: 0px 0px 0px 30px;
+            font-size: 14px;
+            text-align: left;
+            font-weight: 400;
+        	color: whitesmoke;
+        }
+
+        #finishRegistration 
+        {
+        	background-color: #666666;
+        	border-radius: 3px;
+            transition: 500ms;
+        
+        	margin: 5px 0px 0px 30px;
+        	width: 255px;
+        	height: 34px;
+        
+            outline: none;
+        	border: none;
+        	float: left;
+        
+        	box-sizing: border-box;
+        	font-size: 14px;
+        	color: #fff;
+        	cursor: pointer;
+        }
+
+        #mainHeadText
+        {
+            font-size: 17px;
+        	color: #fff;
+        }
+    </style>
+    <body>
+        <header>
+            <div id = "headerBlock">
+                <div id = "logoAppearance"> </div>
+                <input type = "text" id = "search" placeholder="Search"/>
+                <div id = "switchToRussian"> Switch To Russian </div>
+            </div>
+        </header>
+
+        <div class = "mainBlock">
+
+            <div id = "loginForm">
+                <div id = "authorizationForm">
+                    <form name = "authorization">
+                        <input type = "text" id = "login" placeholder = "Phone or email"/>
+                        <input type = "password" id = "password" placeholder = "Password"/>
+                        <button id = "finishLogin"> Log in </button>
+                        <div id = "restorePassword"><a id = "restorePassword" href> Forgot your password? </a>
+                    </div>
+                </form>
+            </div>
+
+            <div id = "registration">
+                <form name = "registrationForm"> 
+                    <h1 id = "firstText"> First time here? </h1>
+                    <p id = "secondText"> Sign up for VK </p>
+                    <input type = "text" id = "firstName" placeholder = "Your first name"/>
+                    <input type = "text" id = "lastName"  placeholder = "Your last name"/>
+
+                    <p id = "thirdText"> Birthday </p>
+                    <input type = "text" id = "day"   placeholder = "Day"/>
+                    <input type = "text" id = "month" placeholder = "Month"/>
+                    <input type = "text" id = "year"  placeholder = "Year"/>
+
+                    <p id = "thirdText"> Your gender </p>
+                    <h2 id = "fourthText"> <input type="radio" id = "checkboxes" name="male">   Male    </h2>
+                    <h2 id = "fourthText"> <input type="radio" id = "checkboxes" name="female"> Female  </h2>
+                    <button id = "finishRegistration"> Continue registration </button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
