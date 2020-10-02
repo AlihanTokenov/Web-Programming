@@ -5,10 +5,99 @@
     box-sizing: inherit;
 }
 
+@media (max-width: 400px)
+{
+    #main_block
+    {
+        align-content: center;
+        padding-top: 0em;
+    }
+}
+
+@media (max-width: 800px)
+{
+    #main_block
+    {
+        align-content: center;
+        padding-left: 0em;
+        padding-top: 3em;
+    }
+    
+    .login_form
+    {
+
+        align-self: center;
+    }
+
+    .container
+    {
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+
+    body 
+    {
+        margin: 0px 0px;    
+    }
+
+    .phone_images .phone_img
+    {
+        transform: scale(0);
+        display: none;
+    }
+
+    .logotype
+    {
+        transform: scale(0.9);
+        margin: 0em 0em;
+        padding: 0em 0em;
+    }
+
+    .footer_navigation_bar ul li
+    {
+        margin: 0.3em;
+    }
+}
+
+@media (max-width: 1500px)
+{
+    footer .container
+    {
+        padding: 0 3em;
+    }
+
+    .footer_navigation_bar ul
+    {
+        justify-content: center;
+    }
+    
+    .footer_navigation_bar ul li
+    {
+        margin: 0.6em;
+    }
+
+    .login_form
+    {
+        margin: 0 auto;
+    }
+
+    #main_block > .container
+    {
+        padding: 0;
+    }
+
+    .copyright 
+    {
+        text-align: center;
+        position: relative;
+        margin: auto auto;
+    }
+}
+
 html
 {
-    font-size: 10px;
     box-sizing: border-box;
+    font-size: 10px;
 }
 
 img
@@ -30,14 +119,12 @@ body
 
 #main_block
 {
-    padding-left: 3em;
-    padding-top: 3em;
-    width: 100%;
-    height: 80em;
-
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+
+    height: 80em;
+    width: 100%;
 }
 
 .container
@@ -55,11 +142,15 @@ body
 
 .phone_images
 {
-    max-width: 45em;
+    align-self: center;
     margin-right: 0em;
-
-    height: 60em;
+    max-width: 45em;
+    display: flex;
+    
+    height: 100%;
     width: 100%;
+    left:0px;
+    top:0px;
 
     flex: 1;
 }
@@ -85,8 +176,6 @@ body
 .border
 {
     padding: 1em;
-    margin-bottom: 1em;
-
     background-color: #fff;
     border: 1px solid #DBDBDB;
     border-radius: 0.4rem;  
@@ -100,10 +189,33 @@ input.password_input
     padding: 0.8rem;
     outline: none;
     width: 80%;
-    height: 20%;
+    height: 50%;
     
     border: 1px solid #DBDBDB;
     border-radius: 0.2em;
+}
+
+.footer_navigation_bar ul
+{
+    list-style: none;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.footer_navigation_bar ul li
+{
+    margin-right: 1em;
+}
+
+.footer_navigation_bar ul li a
+{
+    color: #06365F;
+}
+
+.copyright
+{
+    white-space: nowrap;
+    color: lightgray;
 }
 
 .login_button
@@ -133,42 +245,46 @@ input.password_input
 img.google_play_download,
 img.app_store_download
 {
-    width: 13em;
     height: 4em;
+    width: 13em;
 }
 
 img.app_store_download
 {
-    margin-left: 3.8em;
     margin-right: 1em;
+    margin-left: 3.8em;
 }
 
 span.install_app
 {
-    font-size: 1.4em;
+    display: inline-block;
     white-space: nowrap;
+    margin: 1.5em 4em;
+    font-size: 1.4em;
 }
 
 .separator
 {
-    font-size: 1.3rem;
-    color: #999999;
     text-transform: uppercase;
+    display: inline-block;
     position: relative;
     width: 70%;
-    margin-bottom: 2.5rem;
-    margin-left: 11em;
-    margin-right: 11em;
+    
+    color: #999999;
+    font-weight: 600;
+    font-size: 1.5em;
+    
+    margin: 1em 2.5em 0em;
 }
 
 .separator::before,
 .separator::after
 {
+    transform: translateY(-50%);
     position: absolute;
     background-color: #eee;
     height: 1px;
     top: 50%;
-    transform: translateY(-50%);
 }
 
 .separator::before
@@ -183,10 +299,11 @@ span.install_app
 
 .facebook_link
 {
+    margin-bottom: 2.5rem;
+
     font-size: 1.4rem;
     font-weight: bold;
     color: #385185;
-    margin-bottom: 2.5rem;
 }   
 
 i.facebook
@@ -203,19 +320,44 @@ a.password_reset
 
 .sign_up
 {
+    background-color: #fff;
+    padding: 2rem 0;
+    margin: 1rem 0;
+
     text-align: center;
     font-size: 1.4rem;
-    color: #262626;
-    padding: 2rem 0;
-    background-color: #fff;
     border: 1px solid #DBDBDB;
     border-radius: 4px;
-    margin: 1rem 0;
+    color: #262626;
 }
 
 a.sign_up_link
 {
     font-weight: bold;
     color: #3897f0;
+}
+
+a.facebook_link
+{
+    display: inline-block;
+    margin: 1em 6em;
+}
+
+footer
+{
+    white-space: nowrap;
+    padding: 8em 15em 5em;
+}
+
+footer .container
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 0;
+
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.4em;
 }
 
