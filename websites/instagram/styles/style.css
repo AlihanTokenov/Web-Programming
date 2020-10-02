@@ -14,7 +14,7 @@
     }
 }
 
-@media (max-width: 800px)
+@media (max-width: 600px)
 {
     #main_block
     {
@@ -25,7 +25,6 @@
     
     .login_form
     {
-
         align-self: center;
     }
 
@@ -38,12 +37,6 @@
     body 
     {
         margin: 0px 0px;    
-    }
-
-    .phone_images .phone_img
-    {
-        transform: scale(0);
-        display: none;
     }
 
     .logotype
@@ -59,18 +52,29 @@
     }
 }
 
-@media (max-width: 1500px)
+@media (max-width: 800px)
 {
     footer .container
     {
         padding: 0 3em;
     }
-
-    .footer_navigation_bar ul
-    {
-        justify-content: center;
-    }
     
+    .phone_images 
+    {
+        margin: 0 auto;
+        display: none;
+        width: 0%;
+        height: 0%;
+    }
+
+    .phone_images .phone_img
+    {
+        margin: 0 auto;
+        display: none;
+        width: 0%;
+        height: 0%;
+    }
+
     .footer_navigation_bar ul li
     {
         margin: 0.6em;
@@ -84,6 +88,21 @@
     #main_block > .container
     {
         padding: 0;
+    }
+
+    
+}
+
+@media (max-width: 1425px)
+{
+    .footer_navigation_bar ul li
+    {
+        margin: 0.5em;
+    }
+
+    .footer_navigation_bar ul
+    {
+        justify-content: center;
     }
 
     .copyright 
@@ -114,6 +133,7 @@ a
 
 body
 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #fafafa;
 }
 
@@ -131,7 +151,7 @@ body
 {
     width: 100%;
     max-width: 95em;
-    margin: 3em auto 0;
+    margin: 3em auto 1em;
 }
 
 #main_block > .container
@@ -149,8 +169,8 @@ body
     
     height: 100%;
     width: 100%;
-    left:0px;
-    top:0px;
+    left: 0px;
+    top: 0px;
 
     flex: 1;
 }
@@ -215,7 +235,7 @@ input.password_input
 .copyright
 {
     white-space: nowrap;
-    color: lightgray;
+    color: gray;
 }
 
 .login_button
@@ -346,7 +366,7 @@ a.facebook_link
 footer
 {
     white-space: nowrap;
-    padding: 8em 15em 5em;
+    padding: 8em 12em 6em;
 }
 
 footer .container
@@ -357,7 +377,7 @@ footer .container
     margin-top: 0;
 
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1.4em;
 }
 
