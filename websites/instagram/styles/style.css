@@ -39,6 +39,11 @@
         margin: 0px 0px;    
     }
 
+    #phone_images 
+    {
+        display: none;
+    }
+
     .logotype
     {
         transform: scale(0.9);
@@ -61,6 +66,8 @@
     
     #phone_images 
     {
+        width: 0;
+        height: 0;
         display: none;
     }
 
@@ -90,6 +97,11 @@
     .footer_navigation_bar ul li
     {
         margin: 0.5em 1em;
+    }
+
+    #phone_images 
+    {
+        display: none;
     }
 
     .footer_navigation_bar
