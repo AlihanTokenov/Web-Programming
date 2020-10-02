@@ -8,32 +8,39 @@
     <body>
         <div id = "main_block">
             <div class = "container">
-                <div class = "phone_images"></div>
+                <div class = "phone_images"> 
+                    <img class = "phone_img" src = "images/phone.png"> 
+                </div>
+
                 <div class = "login_form">
-                    <div class = "logotype">
-                        <img src = "images/instagram_logo.png" width = "350px" height = "200px">
+                    <div class = "border">
+                        <div class = "logotype">
+                            <img src = "images/instagram_logo.png">
+                        </div>
+    
+                        <input class = "text_input" type = "text" placeholder = "Номер телефона, никнейм или элек...">
+                        <input class = "password_input" type = "password" placeholder = "Пароль">
+    
+                        <button class = "login_button" type = "submit"> Войти </button>
+                        <span class = "separator"> ИЛИ </span>
+    
+                        <a class = "facebook_link" href = "#home"> <i class = "facebook"></i> Войти через Facebook </a>
+                        <a class = "password_reset" href = "#home"> Забыли пароль? </a>
                     </div>
-
-                    <input type = "text" placeholder = "Phone number, username or email">
-                    <input type = "password" placeholder = "Password">
-
-                    <button class = "login_button" type = "submit"> Log in </button>
-                    <span class = "separator"> or </span>
-
-                    <a class = "facebook_link" href = "#home"> <i class = "facebook"></i> Log in with Facebook </a>
-                    <a class = "password-reset" href = "#home"> Forgot Password? </a>
-                        
-                    <div class = "sign_up"> Don't have an account? <a href = "#home"> Sign up </a> </div>
+            
+                    <div class = "sign_up"> У вас нет аккаунта? <a class = "sign_up_link" href = "#home"> Зарегистрироваться </a> </div>
 
                     <div class = "download_app">
-                        <span> Get the App </span>
+                        <span class = "install_app"> Установите приложение </span>
 
                         <div class = "download_buttons">
-                            <img src = "images/app_store_download.png" alt = "">
-                            <img src = "images/google_play_download.png" alt = "">
+                            <img class = "app_store_download" src = "images/app_store_download.png" width = "200px" height = "100px">
+                            <img class = "google_play_download" src = "images/google_play_download.png">
                         </div>
                     </div>
                 </div>
+
+                
             </div>
 
             <footer>
