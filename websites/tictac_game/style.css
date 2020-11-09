@@ -1,0 +1,47 @@
+body 
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.borders
+{
+    background: #2D363F;
+    border-radius: 4px;
+    margin: 50px 500px 0px 500px;
+    padding: 30px;
+}
+
+.game_desk 
+{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin: 50px auto;
+    width: 306px;
+}
+
+.centering 
+{
+    text-align: center;
+}
+
+.status
+{
+    color: white;
+}
+
+.block 
+{
+    font-family: "Sans Serif";
+    font-weight: 800;
+    font-size: 5em;
+    color: white;
+
+    width: 100px;
+    height: 100px;
+
+    box-shadow: 0 0 0 2px white;
+    border: 1px solid white;
+}
+
+
+

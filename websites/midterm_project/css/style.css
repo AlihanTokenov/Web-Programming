@@ -1,0 +1,425 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(180deg, #F6FAFD 0%, #FFFFFF 19.4%);
+}
+
+#page {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+nav {
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .nav_list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav .nav_list .nav_element {
+    text-align: center;
+    align-self: center;
+    margin: 15px;
+}
+
+nav .nav_list .nav_element a {
+    text-decoration: none;
+    color: #4B5D68;
+}
+
+nav .nav_list .nav_element a:hover
+{
+    opacity: 70%;
+}
+
+nav .nav_list .nav_element a.active_link {
+    color: #212353;
+    font-weight: 800;
+}
+
+#nav_logo {
+    margin-right: 100px;
+    transition-duration: 500ms;
+}
+
+#nav_logo:hover {
+    opacity: 70%;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.button {
+    padding: 16px 37px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-decoration: none;
+}
+
+.nav_button_demo {
+    background: white;
+    color: #212353;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-6 {
+    text-decoration: none;
+    max-width: 45%;
+    flex: 0 45%;
+}
+
+.col-4 {
+    max-width: 22%;
+    flex: 0 22%;
+}
+
+.col-2 {
+    max-width: 16%;
+    flex: 0 16%;
+}
+
+.col-10 {
+    max-width: 75%;
+    flex: 0 75%;
+}
+
+.col-12 {
+    flex: 0 100%;
+}
+
+header {
+    margin-top: 100px;
+    background: url('../img/description.png');
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position-x: right;
+    background-position-y: bottom;
+    height: 700px;
+}
+
+header h1  {
+    font-size: 80px;
+    color: #212353;
+}
+
+header p {
+    margin-top: 50px;
+    font-size: 18px;
+    color: #4B5D68;
+    line-height: 28px;
+}
+
+.button_pink {
+    color: white;
+    background: #9C69E2;
+}
+
+#headline_button {
+    margin-top: 50px;
+}
+
+#description {
+    padding-bottom: 50px;
+    padding-top: 50px;
+    border-radius: 50px;
+    background: rgba(240,99,184,0.15);
+}
+
+#description img {
+    max-width: 100%;
+}
+
+#description h2 {
+    color: #212353;
+    font-size: 40px;
+    line-height: 52px;
+}
+
+#description p {
+    margin-top: 50px;
+    display: block;
+    color: #4B5D68;
+    font-size: 18px;
+    line-height: 29px;
+}
+
+#description_text {
+    align-self: center;
+    padding: 10px;
+}
+
+#features {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    color: #212353;
+    font-size: 40px;
+    line-height: 52px;
+}
+
+#features p {
+    margin-top: 50px;
+    max-width: 584px;
+    display: inline-block;
+    color: #4B5D68;
+    font-size: 18px;
+    line-height: 29px;
+}
+
+#features_description {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#features_content h4 {
+    color: rgba(33,35,83,1);
+    font-size: 24px;
+    line-height: 32px;
+}
+
+#features_content p, #features_content a {
+    color: rgba(33,35,83,1);
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.feature_rows {
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.feature_rows .col-6 {
+    max-width: 40%;
+    margin-bottom: 50px;
+}
+
+#features_content a {
+    display: flex;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 50px;
+}
+
+.feature {
+    padding: 33px;
+    border-radius: 50px;
+}
+
+.feature.row {
+    justify-content: space-between;
+}
+
+.feature .image_container {
+    align-self: center;
+}
+
+.feature.green {
+    background: rgba(104,201,186,0.3);
+}
+.feature.pink_dark {
+    background: rgba(156,105,226,0.3);
+}
+.feature.pink {
+    background: rgba(240,99,184,0.3);
+}
+.feature.blue {
+    background: rgba(45,156,219,0.3);
+}
+
+#testimonials {
+    margin-top: 50px;
+    margin-bottom: 150px;
+    background: rgba(156,105,226,1);
+    border-radius: 50px;
+    padding: 110px 90px;
+
+    color: #4B5D68;
+}
+
+#testimonials h3 {
+    color: white;
+    font-size: 40px;
+    line-height: 52px;
+}
+
+#testimonials .card {
+    background: white;
+    padding: 60px;
+    margin-bottom: 50px;
+    border-radius: 50px;
+}
+
+#testimonials .card .row {
+    justify-content: space-between;
+}
+
+#testimonials h3 {
+    margin-bottom: 50px;
+}
+
+.ava_container img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.testimonial_author {
+    font-size: 18px;
+    line-height: 29px;
+    font-weight: bold;
+}
+
+#testimonials p {
+    font-size: 18px;
+    line-height: 32px;
+}
+
+footer {
+
+    padding: 5px;
+    border-top: 1px solid #E5E5E5;
+}
+
+#try_for_free {
+    max-width: 1140px;
+    margin: 0 auto;
+    color: #4B5D68;
+    padding-top: 100px;
+}
+
+#footer_body {
+    max-width: 1140px;
+    margin: 0 auto;
+    color: #4B5D68;
+}
+
+#try_for_free h2 {
+    margin-bottom: 20px;
+}
+
+.learn_more_button {
+    color: white;
+    background: rgba(240,99,184,1);
+}
+
+.flex_container {
+    display: flex;
+}
+
+.flex_dir_end {
+    flex-direction: row-reverse;
+    align-self: center;
+}
+
+.space_between {
+    justify-content: space-between;
+}
+
+#try_for_free .button {
+    margin-left: 30px;
+}
+
+#footer_body {
+    margin-top: 150px;
+}
+
+#footer_logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#footer_logo * {
+    margin-right: 20px;
+}
+
+#footer_body p {
+    margin-bottom: 20px;
+    line-height: 28px;
+}
+
+.footer_menu {
+    line-height: 40px;
+    font-size: 16px;
+}
+
+.footer_menu ul {
+    list-style: none;
+}
+
+.footer_menu a {
+    text-decoration: none;
+    color: #4B5D68;
+}
+
+.li_header {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#copyright p {
+    padding: 5px;
+    color: #4B5D68;
+    font-size: 12px;
+    line-height: 21px;
+}
+
+@media only screen and (max-width: 739px) {
+    .row.feature_rows .col-6, #try_for_free .col-6 {
+        max-width: 100%;
+        flex: 0 100%;
+        padding: 20px;
+    }
+    #try_for_free .flex_dir_end {
+        flex-direction: row;
+    }
+    nav {
+        flex-flow: column;
+    }
+
+    nav .nav_list {
+        flex-flow: column;
+    }
+
+    #nav_logo {
+        margin-right: 0;
+    }
+
+    #footer_body {
+        flex-flow: column;
+    }
+
+    #footer_body .col-4 {
+        max-width: 100%;
+        flex: 0 100%;
+    }
+
+    .footer_menu {
+        align-self: center;
+    }
+
+    #contacts {
+        align-self: center;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    main {
+        margin-top: 150px;
+    }
+}
